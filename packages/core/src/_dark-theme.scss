@@ -6,3 +6,12 @@
   // dark scrollbars (only works in Chrome and Edge, not IE or Firefox)
   color-scheme: dark;
 }
+
+.#{$ns}-auto {
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    color-scheme: light;
+  }
+}
